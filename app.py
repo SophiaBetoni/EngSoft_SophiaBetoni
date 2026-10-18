@@ -1,6 +1,8 @@
-from flask import Flask
+from flask import Flask, render_template
+
 app = Flask(__name__)
+
 
 @app.route("/")
 def hello():
-    return "Hello, Mackenzie!!! Meu nome é Sophia <3 "
+    return render_template("index.html")
